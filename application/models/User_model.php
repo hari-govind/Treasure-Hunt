@@ -1,5 +1,5 @@
 <?php
-class user_model extends CI_Model {
+class User_model extends CI_Model {
 
 	/*Note:
 		Roles are used to easily separate admins without duplicating code.

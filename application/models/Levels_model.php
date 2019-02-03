@@ -1,5 +1,5 @@
 <?php
-class levels_model extends CI_Model {
+class Levels_model extends CI_Model {
 
 	function get_level() {
 		//get level for the current user

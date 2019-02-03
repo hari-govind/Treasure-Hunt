@@ -1,5 +1,5 @@
 <?php
-class status_model extends CI_Model {
+class Status_model extends CI_Model {
 
 	function get_leaderboard(){
 		//prepare a leaderboard
