@@ -16,7 +16,7 @@ X| Base Site URL
 */
 
 //Please change to your installation folder, with a trailing / (slash)
-$config['base_url']	= 'http://localhost/';
+$config['base_url']	= 'http://localhost/hunt/Treasure-Hunt/';
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ $config['base_url']	= 'http://localhost/';
 |
 */
 // $config['index_page'] = 'index.php';
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -252,11 +252,12 @@ $config['encryption_key'] = '5u15UzTsFe2q9s5bb8zmnAc7k2r68t55';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
+
+$config['sess_driver'] = 'database';
 $config['sess_cookie_name']		= 'ci_session';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= TRUE;
-$config['sess_use_database']	= TRUE;
 $config['sess_table_name']		= 'ci_sessions';
 $config['sess_match_ip']		= TRUE;
 $config['sess_match_useragent']	= TRUE;
