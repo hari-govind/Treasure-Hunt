@@ -101,7 +101,7 @@ class Home extends CI_Controller {
 					'role' => $role
 				));
 
-				redirect(base_url(), 'location');
+				redirect(site_url('login'));
 			}else{
 				//0 was returned. could be some error with Facebook API
 				//return to home page, and let the user try logging in again, after logging out
@@ -110,7 +110,7 @@ class Home extends CI_Controller {
 		}else{
 			$facebook = $this->facebook->instance->getRedirectLoginHelper();
 			$permissions = ['email'];
-			$loginUrl = $facebook->getLoginUrl(base_url().'login', $permissions);
+			$loginUrl = $facebook->getLoginUrl(site_url('login'), $permissions);
 
 			//redirect to Facebook to authenticate
 			redirect($loginUrl);
