@@ -93,20 +93,20 @@ along with the proper attribution to the original project creator.
 	    <div class="navbar-collapse collapse">
 	      <ul class="nav navbar-nav">
 	      	<?php if($this->session->userdata('is_logged_in')==TRUE) { ?>
-	        <li <?=$active['arena']?>><a href="<?=base_url();?>">Arena</a></li>
+	        <li <?=$active['arena']?>><a href="<?=site_url();?>">Arena</a></li>
 	        <?php } ?>
-	        <li <?=$active['rules']?>><a href="<?=base_url();?>rules">Rules</a></li>
-	        <li <?=$active['leaderboard']?>><a href="<?=base_url();?>leaderboard">Leaderboard</a></li>
-	        <li <?=$active['winners']?>><a href="<?=base_url();?>winners">Winners</a></li>
+	        <li <?=$active['rules']?>><a href="<?=site_url('rules');?>">Rules</a></li>
+	        <li <?=$active['leaderboard']?>><a href="<?=site_url('leaderboard');?>">Leaderboard</a></li>
+	        <li <?=$active['winners']?>><a href="<?=site_url('winners');?>">Winners</a></li>
 
 
 	        <?php if($this->session->userdata('role')>=2) { ?>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin Panel <b class="caret"></b></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="<?=base_url();?>nimda">Home</a></li>
-	            <li><a href="<?=base_url();?>nimda/levels">Levels</a></li>
-	            <li><a href="<?=base_url();?>nimda/users">Users</a></li>
+	            <li><a href="<?=site_url('nimda');?>">Home</a></li>
+	            <li><a href="<?=site_url('nimda/levels');?>">Levels</a></li>
+	            <li><a href="<?=site_url('nimda/users');?>">Users</a></li>
 	          </ul>
 	        </li>
 	        <?php } ?>
@@ -115,16 +115,16 @@ along with the proper attribution to the original project creator.
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	      	<?php if($this->session->userdata('is_logged_in')!=TRUE) { ?>
-	        <li><a href="<?=base_url();?>login">Login</a></li>
+	        <li><a href="<?=site_url('login');?>">Login</a></li>
 	        <?php }else { ?>
 	        <li><a href="http://www.facebook.com/clueless.tathva" target="_blank">Clues</a></li>
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$this->session->userdata('fb_name')?> <b class="caret"></b></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="<?=base_url();?>profile">Profile</a></li>
+	            <li><a href="<?=site_url('profile');?>">Profile</a></li>
 	            <li class="divider"></li>
 	            <li class="dropdown-header"><?=$this->session->userdata('fb_name')?></li>
-	            <li><a href="<?=base_url();?>logout">Log-out</a></li>
+	            <li><a href="<?=site_url('logout');?>">Log-out</a></li>
 	          </ul>
 	        </li>
 	        <?php } ?>
