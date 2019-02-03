@@ -7,11 +7,11 @@
 			if($result == true){
 				echo '<h1><span class="text-success">CORRECT</span></h1>';
 				echo '<br><img src="/levels/'.$image.'"/><br><br>';
-				echo '<br><p><a class="btn btn-lg btn-success" href="'.base_url().'">Next Level <i class="glyphicon glyphicon-chevron-right"></i></a></p>';
+				echo '<br><p><a class="btn btn-lg btn-success" href="'.site_url().'">Next Level <i class="glyphicon glyphicon-chevron-right"></i></a></p>';
 				
 			}else{
 				echo '<h1><span class="text-danger">WRONG</span></h1>';
-				echo '<br><p><a class="btn btn-lg btn-danger" href="'.base_url().'">Try Again <i class="glyphicon glyphicon-chevron-left"></i></a></p>';
+				echo '<br><p><a class="btn btn-lg btn-danger" href="'.site_url().'">Try Again <i class="glyphicon glyphicon-chevron-left"></i></a></p>';
 			}
 		?>
 	</div>

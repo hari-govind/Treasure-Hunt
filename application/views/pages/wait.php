@@ -11,12 +11,12 @@
 		<div class="col-lg-4">
 			<h2>Leaderboard</h2>
 			<p>Keep track of your competitors.</p>
-			<p><a class="btn btn-default" href="<?=base_url()?>leaderboard">View Leaderboard »</a></p>
+			<p><a class="btn btn-default" href="<?=site_url('leaderboard')?>">View Leaderboard »</a></p>
 		</div>
 		<div class="col-lg-4">
 			<h2>Winners</h2>
 			<p>The determined ones.</p>
-			<p><a class="btn btn-default" href="<?=base_url()?>winners">Winners »</a></p>
+			<p><a class="btn btn-default" href="<?=site_url('winners')?>">Winners »</a></p>
 		</div>
 		<div class="col-lg-4">
 			<h2>Tathva</h2>
