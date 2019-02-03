@@ -76,8 +76,8 @@ class Levels_model extends CI_Model {
 			'fb_uid' => $fb_uid,
 			'fb_name' => $fb_name,
 			'level' => $current_level,
-			'answer' => mysql_real_escape_string($answer),
-			'ip' =>  mysql_real_escape_string($_SERVER['REMOTE_ADDR'])
+			'answer' => $this->db->escape($answer),
+			'ip' =>  $this->db->escape($_SERVER['REMOTE_ADDR'])
 		);
 		$this->db->insert('log_answers',$log);
 
